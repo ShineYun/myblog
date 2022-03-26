@@ -42,9 +42,10 @@ export default {
   text-align: center;
   width: 100vw;
   height: 100vh;
-  /*overflow: hidden;*/
-  /*min-width: 1000px;*/
+  min-width: 1000px;
   background-image: url("https://pic3.zhimg.com/v2-9dfb9bd28656a13d7d57793c853dfb52_1440w.jpg?source=172ae18b");
+  background-size:cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 </style>
