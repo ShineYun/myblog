@@ -83,8 +83,9 @@ a {
   color: #000;
   //伪类 当光标位于所在时
   &:hover {
-    background-color:  #faecd8;
+    background-color:  rgba(#faecd8,30%);
     transition: 0.3s;
+
   }
 }
 

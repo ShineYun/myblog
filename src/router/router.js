@@ -35,6 +35,12 @@ const routes = [
         meta: {
             index: 4,
         }
+    },
+    //假博客地址
+    {
+        path: '/blog',
+        name: 'blog',
+        component: () => import("@/views/Blog"),
     }
 ]
 
