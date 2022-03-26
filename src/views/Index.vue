@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="center">
-        <el-card class="card" v-for="index in 6">
+        <el-card class="card" v-for="index in 20">
           <router-link to="/blog">
             <img
                 src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
@@ -67,10 +67,11 @@ export default {
   //max-height: 100%;
   flex: 1;
   backdrop-filter: blur(5px);
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 400px);
-  //display: flex;
-  //flex-wrap: wrap;
+  //display: grid;
+  //grid-template-columns: repeat(auto-fill, 400px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   overflow-y: auto;
 
   & #title {
@@ -93,13 +94,13 @@ export default {
 }
 
 .card {
-  width: 300px;
+  width: 280px;
   height: 350px;
   border-radius: 12px !important;
   margin: 10px;
 
   &:hover {
-    box-shadow: 9px 11px 12px 7px #e5e5e5;
+    box-shadow: 4px 6px 20px 9px rgb(0 0 0 / 30%);
     transition: 0.3s;
   }
 
