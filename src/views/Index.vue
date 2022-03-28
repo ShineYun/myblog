@@ -6,7 +6,7 @@
 
       <div class="left">
         <div id="title">
-          <span>ShineYun - Blog</span>
+          <h1>ShineYun - Blog</h1>
         </div>
       </div>
       <div class="center">

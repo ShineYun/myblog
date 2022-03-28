@@ -10,10 +10,14 @@
       </router-link>
 
     </div>
-    <div id="userShow">
-      <p>ShineYun - Blog</p>
-      <img id="avatar" src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg">
-    </div>
+      <div id="userShow">
+        <router-link to="/info" >
+        <p>ShineYun - Blog</p>
+        </router-link>
+        <router-link to="/info">
+        <img id="avatar" src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg">
+        </router-link>
+      </div>
   </div>
 </template>
 
@@ -99,6 +103,8 @@ a {
   width: 100vw;
   height: 60px;
   align-items: center;
+  background-color: #d5fffd;
+  opacity: 0.7;
 }
 #userShow{
   display: flex;
@@ -111,6 +117,9 @@ a {
     height: 40px;
     width: 40px;
     border-radius: 50%;
+  }
+  & a{
+    color: black;
   }
 }
 
