@@ -66,13 +66,15 @@ export default {
   height: auto;
   //max-height: 100%;
   flex: 1;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   //display: grid;
   //grid-template-columns: repeat(auto-fill, 400px);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   overflow-y: auto;
+  background:  rgba(255,255,255,.2);;
+  opacity: 0.9;
 
   & #title {
     font-size: 50px;

@@ -54,7 +54,12 @@ export default {
   width: 200px;
 }
 
+.el-timeline-item{
+  & .el-timeline-item__timestamp{
+    color: black;
+  }
 
+}
 
 
 </style>

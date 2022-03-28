@@ -15,7 +15,7 @@
         <p>ShineYun - Blog</p>
         </router-link>
         <router-link to="/info">
-        <img id="avatar" src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg">
+        <img id="avatar" src="https://avatars.githubusercontent.com/u/44264278?s=400&u=7fad505b09aefe3673b4dbf1d7aceddea4d24ca4&v=4">
         </router-link>
       </div>
   </div>
