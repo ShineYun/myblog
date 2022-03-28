@@ -2,9 +2,7 @@
   <!--flexbox布局-->
   <section class="layout flexbox">
     <article class="left-center-right">
-      <div class="left">
-        <h1>Category</h1>
-      </div>
+      <div class="left"/>
         <div class="center">
           <div class="category-menu" >
             <router-link to="/blog" v-for="(category) in categories">

@@ -103,8 +103,7 @@ a {
   width: 100vw;
   height: 60px;
   align-items: center;
-  background-color: #d5fffd;
-  opacity: 0.7;
+  background: rgb(144 200 200 / 60%);
 }
 #userShow{
   display: flex;

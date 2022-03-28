@@ -2,9 +2,7 @@
   <!--flexbox布局-->
   <section className="layout flexbox">
     <article className="left-center-right">
-      <div className="left">
-        <h1>Info</h1>
-      </div>
+      <div className="left"/>
       <div className="center info-bg">
         <div class="center-align">
           <img  id="avatar" src="https://avatars.githubusercontent.com/u/44264278?s=400&u=7fad505b09aefe3673b4dbf1d7aceddea4d24ca4&v=4">

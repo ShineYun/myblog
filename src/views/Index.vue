@@ -5,14 +5,11 @@
 
 
       <div class="left">
-        <div id="title">
-          <h1>ShineYun - Blog</h1>
-        </div>
       </div>
       <div class="center">
         <el-card class="card" v-for="index in 20">
           <router-link to="/blog">
-            <img
+            <img id="card-img"
                 src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
                 class="image"
             />
@@ -76,14 +73,6 @@ export default {
   background:  rgba(255,255,255,.2);;
   opacity: 0.9;
   box-shadow: -5px 14px 16px 16px rgb(212 167 167 / 20%);
-  & #title {
-    font-size: 50px;
-    height: 100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   & .el-row {
     height: 100%;
@@ -112,6 +101,9 @@ export default {
     &:hover {
       color: coral;
     }
+  }
+  & #card-img{
+    border-radius: 50%;
   }
 
 }

@@ -2,9 +2,7 @@
   <!--flexbox布局-->
   <section class="layout flexbox">
     <article class="left-center-right">
-      <div class="left">
-        <h1>TimeLine</h1>
-      </div>
+      <div class="left"/>
       <div class="center">
           <el-timeline>
             <el-timeline-item timestamp="2018/4/12" placement="top">
