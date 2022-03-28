@@ -75,7 +75,7 @@ export default {
   overflow-y: auto;
   background:  rgba(255,255,255,.2);;
   opacity: 0.9;
-
+  box-shadow: -5px 14px 16px 16px rgb(212 167 167 / 20%);
   & #title {
     font-size: 50px;
     height: 100px;
