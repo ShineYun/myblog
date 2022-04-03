@@ -46,7 +46,7 @@ export default {
 <style lang="less">
 
 .layout {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 80px);
 }
 
 .layout.flexbox .left-center-right {

@@ -1,5 +1,7 @@
 <template>
-  <div id="footer">Copyright @ShineYun</div>
+  <div id="head-bar-menu">
+    <p id="footer">Copyright @ShineYun</p>
+  </div>
 </template>
 
 <script>
@@ -8,11 +10,18 @@ export default {
 </script>
 
 <style scoped>
-.footer{
-  position:absolute;
-  bottom:0;
-  width:100%;
-  height:100px;
-  background-color: #ffc0cb;
+#head-bar-menu{
+  display: flex;
+  width: 100vw;
+  height: 20px;
+  align-items: center;
+  background-color:transparent;
+}
+
+
+#footer{
+  margin-left: auto;
+  margin-right: auto;
+  color: aliceblue;
 }
 </style>

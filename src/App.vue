@@ -1,17 +1,18 @@
 <template>
   <Headbar msg="Welcome to Your Vue.js App"/>
   <router-view></router-view>
-<!--  <Copyright></Copyright>-->
+  <Copyright></Copyright>
 </template>
 
 <script>
 
 import Headbar from "@/components/Headbar";
-// import Copyright from "@/components/Copyright";
+import Copyright from "@/components/Copyright";
 export default {
   name: 'App',
   components: {
     Headbar,
+    Copyright,
     // Copyright,
   }
 }
