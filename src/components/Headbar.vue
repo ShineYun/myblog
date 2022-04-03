@@ -1,4 +1,5 @@
 <template>
+
   <div id="head-bar-menu">
     <div class="my-menu-demo" >
       <router-link
@@ -6,7 +7,10 @@
           :key="page.index"
           :to="page.to"
       >
-        <div :class="['my-menu-item', { 'active-menu-item':activeIndex == page.index}]">{{page.name}}</div>
+        <div :class="['my-menu-item', { 'active-menu-item':activeIndex == page.index}]">
+          <img :src= "page.icon">
+          {{page.name}}
+        </div>
       </router-link>
 
     </div>
@@ -32,22 +36,26 @@ export default {
         {
           index: 1,
           to: '/',
-          name: 'Index'
+          name: 'Index',
+          icon:require('../static/svg/Home.svg')
         },
         {
           index: 2,
           to: '/category',
-          name: 'Category'
+          name: 'Category',
+          icon:require('../static/svg/Graph.svg')
         },
         {
           index: 3,
           to: '/timeline',
-          name: 'TimeLine'
+          name: 'TimeLine',
+          icon:require('../static/svg/Activity.svg')
         },
         {
           index: 4,
           to: '/info',
-          name: 'Info'
+          name: 'Info',
+          icon:require('../static/svg/Profile.svg')
         },
       ]
     }
