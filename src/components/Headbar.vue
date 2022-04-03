@@ -1,5 +1,4 @@
 <template>
-
   <div id="head-bar-menu">
     <div class="my-menu-demo" >
       <router-link
@@ -8,7 +7,7 @@
           :to="page.to"
       >
         <div :class="['my-menu-item', { 'active-menu-item':activeIndex == page.index}]">
-          <img :src= "page.icon">
+          <svg class="icon" aria-hidden="true"><use v-bind:xlink:href=page.icon></use></svg>
           {{page.name}}
         </div>
       </router-link>
@@ -25,8 +24,8 @@
   </div>
 </template>
 
-
 <script>
+
 export default {
   name: "headBar",
   data() {
@@ -37,25 +36,25 @@ export default {
           index: 1,
           to: '/',
           name: 'Index',
-          icon:require('../static/svg/Home.svg')
+          icon:'#icon-icon1'
         },
         {
           index: 2,
           to: '/category',
           name: 'Category',
-          icon:require('../static/svg/Graph.svg')
+          icon:'#icon-categoryselected'
         },
         {
           index: 3,
           to: '/timeline',
           name: 'TimeLine',
-          icon:require('../static/svg/Activity.svg')
+          icon:'#icon-time'
         },
         {
           index: 4,
           to: '/info',
           name: 'Info',
-          icon:require('../static/svg/Profile.svg')
+          icon:'#icon-icon'
         },
       ]
     }
@@ -71,6 +70,13 @@ export default {
 </script>
 
 <style lang="less">
+.icon{
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill:#000000;
+  overflow:hidden;
+}
 
 a {
   text-decoration : none
@@ -82,6 +88,7 @@ a {
   align-items: center;
   width: 30%;
   height: 100%;
+  margin-bottom: 1px;
   & a{
     height: 100%;
   }
@@ -104,6 +111,10 @@ a {
 .active-menu-item{
   color:  #b88230;
   border-bottom: 2px solid #b88230;
+}
+.active-menu-icon{
+  transform: translate(-60px);
+  filter: drop-shadow(60px 0 0 #b88230);
 }
 
 #head-bar-menu{
